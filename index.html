@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesón Casa Mendoza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f8f5f2;
+    color: #333;
+}
+
+/* TIPOGRAFÍA */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('fachada.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #7b1e1e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a52a2a;
+}
+
+/* SECCIONES */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* GALERÍA */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* MAPA */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* BOTONES FLOTANTES */
+.floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating a {
+    background: #7b1e1e;
+    color: white;
+    padding: 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Mesón Casa Mendoza</h1>
+        <p>Carnes a la brasa · Pescados frescos · Tradición andaluza</p>
+        <a class="btn" href="tel:955115259">Reservar ahora</a>
+    </div>
+</div>
+
+<!-- SOBRE NOSOTROS -->
+<section class="section">
+    <h2>Nuestro Restaurante</h2>
+    <div class="card">
+        <p>Un lugar tradicional en Dos Hermanas donde disfrutar de la mejor cocina casera en un ambiente familiar y acogedor.</p>
+    </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="section">
+    <h2>Especialidades</h2>
+    <div class="card">
+        <p>🥩 Carnes a la brasa</p>
+        <p>🐟 Pescados frescos</p>
+        <p>🍷 Cocina tradicional andaluza</p>
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="section">
+    <h2>Galería</h2>
+    <div class="gallery">
+        <img src="interior.jpg">
+        <img src="comida.jpg">
+    </div>
+</section>
+
+<!-- CARTA -->
+<section class="section">
+    <h2>Carta</h2>
+    <p>Descubre todos nuestros platos</p>
+    <a class="btn" href="carta.pdf">Ver carta</a>
+</section>
+
+<!-- HORARIO -->
+<section class="section">
+    <h2>Horario</h2>
+    <div class="card">
+        <p>Jueves a sábado: 13:00–17:00 | 20:00–24:00</p>
+        <p>Domingo: 13:00–17:00</p>
+        <p>Lunes a miércoles: Cerrado</p>
+    </div>
+</section>
+
+<!-- OPINIONES -->
+<section class="section">
+    <h2>Opiniones</h2>
+    <div class="card">
+        <p>"La mejor carne a la brasa de la zona"</p>
+        <p>"Ambiente familiar y comida espectacular"</p>
+    </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="section">
+    <h2>Ubicación</h2>
+    <p>Calle Navarra, 7, Dos Hermanas</p>
+    <iframe src="https://www.google.com/maps?q=Calle+Navarra+7+Dos+Hermanas&output=embed"></iframe>
+</section>
+
+<!-- BOTONES -->
+<div class="floating">
+    <a href="tel:955115259">📞</a>
+    <a href="https://wa.me/34955115259?text=Hola,%20quiero%20reservar%20una%20mesa">💬</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Mesón Casa Mendoza
+</div>
+
+</body>
+</html>
